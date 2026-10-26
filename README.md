@@ -27,6 +27,8 @@ python3 -m http.server 5230 --bind 127.0.0.1
 
 | File | Use |
 | --- | --- |
+| `logo-official.png` | Owner's official transparent logo (mark + name + address), untouched |
+| `logo-loader.png` | Official logo cropped above the address, used on the loading screen |
 | `logo-lockup.png` | Mark + "ALL IN ONE PRINTS", black text, for light backgrounds |
 | `logo-lockup-light.png` | Same with white text, for dark backgrounds (site preloader, footer, mobile menu) |
 | `logo-with-address.png` / `logo-with-address-light.png` | Full logo incl. address, dark / white text |

@@ -118,7 +118,7 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 .preloader {
   position: fixed; inset: 0; z-index: 1000;
   display: grid; place-items: center;
-  background: var(--ink);
+  background: var(--paper);
   clip-path: inset(0 0 0 0);
   transition: clip-path 1s var(--ease-in-out);
   animation: preloader-fallback 0s 4s forwards;
@@ -127,10 +127,10 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
 @keyframes preloader-fallback { to { visibility: hidden; } }
 .preloader__inner { display: grid; justify-items: center; gap: 18px; }
 .preloader__logo {
-  width: 170px;
+  width: clamp(190px, 18vw, 260px);
   animation: pre-pop 1s var(--ease) both;
 }
-.preloader__bar { width: 180px; height: 3px; background: var(--line-light); border-radius: 3px; overflow: hidden; }
+.preloader__bar { width: 180px; height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; }
 .preloader__bar i { display: block; height: 100%; width: 100%; background: var(--orange); transform-origin: left; animation: pre-bar 1.2s .15s var(--ease-in-out) both; }
 @keyframes pre-pop { from { transform: scale(.6) rotate(-12deg); opacity: 0; } }
 @keyframes pre-bar { from { transform: scaleX(0); } }
