@@ -226,14 +226,6 @@ svg { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1
   animation: slash-in 1.4s 1.1s var(--ease) both;
 }
 @keyframes slash-in { from { transform: skewX(-12deg) translateX(60%); } }
-.hero__grid {
-  position: absolute; inset: 0;
-  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse at 20% 40%, #000 10%, transparent 65%);
-  -webkit-mask-image: radial-gradient(ellipse at 20% 40%, #000 10%, transparent 65%);
-  opacity: .55;
-}
 .hero__glow {
   position: absolute; width: 640px; height: 640px; right: 8%; top: 18%;
   background: radial-gradient(circle, rgba(232, 112, 30, .35), transparent 62%);
